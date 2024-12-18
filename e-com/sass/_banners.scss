@@ -1,0 +1,152 @@
+// hero banner
+@import "./variable";
+
+$primary-color: #ff4d4f;
+$secondary-color: #aaa;
+$background-color: #fff;
+$card-shadow: rgba(0, 0, 0, 0.1);
+$font-color: #333;
+$border-radius: 10px;
+$primary-color: #ff4d4f;
+$text-color: #333;
+$light-gray: #f2f2f2;
+$border-radius: 8px;
+
+$primary-color: #333;
+$secondary-color: #ff4d4f;
+$text-white: #fff;
+$hover-color: #f2f2f2;
+
+// top banner
+.top-banner {
+  background-color:$custom-dark-color;
+  color: $custom-text-white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+    a{
+      color: $custom-text-white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .language-dropdown {
+      border: none;
+      background-color: transparent;
+      color: $custom-text-white;
+      font-size: 14px;
+      option{
+        color: $custom-dark-color;
+      }
+    }
+  }
+
+
+.category-list {
+  list-style: none;
+  .category-item {
+    a {
+      display: block;
+      padding: 10px 0;
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 1rem;
+      // border-bottom: 1px solid #eaeaea;
+
+      &:hover {
+        color: $custom-hover-btn-2;
+      }
+    }
+  }
+}
+
+.hero-section{
+  .hero-banner {
+    background-color: $custom-dark-color;
+    background-image: url(/images/products/hero_iphone.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: right center;
+  
+    .hero-content {
+      color: $custom-text-white;
+      h6 {
+        font-size: 1rem;
+        color: $custom-text-gray;
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      .shop-now-btn {
+        border-bottom: 2px solid $custom-text-white;
+        text-decoration: none;
+  
+        &:hover {
+          color:  $custom-hover-btn-2;
+          border-color: $custom-hover-btn-2;
+        }
+      }
+    }
+  
+    // Navigation Dots
+    .navigation-dots {
+      .dot {
+        height: 10px;
+        width: 10px;
+        background-color: $custom-text-gray;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+  
+        &.active {
+          background-color:$custom-btn-2;
+        }
+      }
+    }
+}
+}
+ 
+// poster banner
+.poster-container{
+    position: relative;
+    background: #000000;
+    padding: 30px;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+    img{
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80%; 
+        width: auto ;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.9); 
+        z-index: 1;
+    }
+    
+    h6{
+        color:$clr-btn-1;
+        font-size: 1rem;
+        
+
+    }
+    h3{
+        color:white;
+        font-size: 3rem;
+        
+        
+    }
+    .poster-content{
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        max-width: 400px;
+        padding-left: 20px;
+    }
+
+}

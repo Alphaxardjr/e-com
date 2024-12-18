@@ -1,0 +1,38 @@
+@import "./variable";
+.category-tab {
+    background-color:none;
+    background: none;
+    border: 1px solid $custom-primary-2;
+    border-radius:8px;
+    color: $custom-dark-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 160px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    .category-tab__icon{ 
+        img {
+        width: 40px; 
+        height: 40px;
+        margin-bottom: 1rem;
+        }
+    }
+    .category-tab__label {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color:$custom-hover-btn-2; 
+        color: $custom-text-white;
+    }
+    .category-tab-active{
+        background-color: $custom-secondary-2;
+        color: $custom-text-white;
+    }
+}
+

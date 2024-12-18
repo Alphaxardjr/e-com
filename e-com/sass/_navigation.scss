@@ -1,0 +1,32 @@
+@import "./variable";
+
+.navbar {
+    width: 100%;
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .nav-link {
+    color: $custom-dark-color;
+    font-size: 1rem;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .search-bar {
+    background-color: $bg-input;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input {
+    background-color: $bg-input;
+    border: none;
+    outline: none;
+  }
+}

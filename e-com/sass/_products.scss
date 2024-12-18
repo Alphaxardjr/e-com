@@ -1,0 +1,69 @@
+// Variables
+$dark-color: #000;
+$light-color: #fff;
+$overlay-bg: rgba(0, 0, 0, 0.6);
+$font-family: Arial, sans-serif;
+
+// Mixins
+@mixin overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $overlay-bg;
+    color: $light-color;
+    padding: 1rem;
+}
+
+// General Styles
+body {
+    font-family: $font-family;
+}
+
+.product-section {
+    .product-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay-text {
+            @include overlay;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+
+            h3, h4 {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            a {
+                margin-top: 0.5rem;
+                color: $light-color;
+                border-color: $light-color;
+                &:hover {
+                    background: $light-color;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+
+    // Specific product styles
+    .playstation {
+        background: $dark-color;
+    }
+
+    .women-collection,
+    .speakers,
+    .perfume {
+        background: $dark-color;
+        // .overlay-text {
+        //     background: rgba(0, 0, 0, 0.7);
+        // }
+    }
+}

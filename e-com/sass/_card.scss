@@ -1,0 +1,126 @@
+@import "./variable";
+// Variables
+$primary-color: #ff4d4f;
+$secondary-color: #aaa;
+$background-color: #fff;
+$card-shadow: rgba(0, 0, 0, 0.1);
+$font-color: #333;
+$border-radius: 10px;
+.product-card {
+  position: relative;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px $card-shadow;
+  
+  width: 220px;
+  font-family: Arial, sans-serif;
+  .top-card-container{
+    position: relative;
+    padding: 7px 15px;
+    background-color: $secondary-color;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+
+
+    // Discount Badge
+    .discount-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 4px;
+        z-index: 2;
+    }
+
+    // Product Image
+    .image-container {
+        position: relative;
+        text-align: center;
+        max-width: 150px;
+        margin: auto;
+    
+        img {
+          width: 100%;
+          width: 130px;
+          height: auto;
+          border-radius: $border-radius;
+        }
+      }
+    .icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .icon {
+            background-color: #fff;
+            border: 1px solid $secondary-color;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px $card-shadow;
+
+            &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            border-color: $primary-color;
+            }
+        }
+    }
+
+  }
+  // Product Info
+  .product-info {
+    margin-top: 15px;
+    padding: 15px;
+
+    .product-title {
+      font-size: 16px;
+      color: $font-color;
+      margin: 5px 0;
+    }
+
+    .price {
+      display: flex;
+      gap: 10px;
+      margin: 5px 0;
+
+      .current-price {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .original-price {
+        color: $secondary-color;
+        text-decoration: line-through;
+        font-size: 14px;
+      }
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .stars {
+        color: gold;
+        font-size: 14px;
+      }
+
+      .reviews {
+        color: $secondary-color;
+        font-size: 12px;
+      }
+    }
+  }
+}

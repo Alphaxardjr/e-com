@@ -1,0 +1,63 @@
+@import "./variable";
+
+.flash-sales {
+    background-color: #fff;
+    .intro {
+      .badge-text {
+        font-size: 14px;
+        color: $custom-secondary-2;
+  
+        .badge-icon {
+          background-color: $custom-secondary-2;
+          height: 30px;
+          width: 15px;
+          border-radius: $border-radius;
+        }
+      }
+  
+      h1 {
+        font-size: 2rem;
+        color: $custom-dark-color;
+      }
+    }
+  
+    // Timer section
+    .timer {
+      .time-box {
+        text-align: center;
+  
+        .time-value {
+          font-size: 2rem;
+          color: $custom-dark-color;
+        }
+  
+        .time-label {
+          font-size: 0.9rem;
+          color: $custom-secondary-2;   
+        }
+      }
+    }
+  
+    // Navigation arrows
+    .arrows {
+      .arrow-btn {
+        border: none;
+        background-color: $light-gray;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: $text-color;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+          transition: background 0.3s ease;
+        }
+      }
+    }
+  }
